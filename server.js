@@ -18,7 +18,7 @@ app.get('/lego/sets', (req, res)=>{
     })
 })
 
-app.get('/lego/sets/num-demp', (req, res)=>{
+app.get('/lego/sets/num-demo', (req, res)=>{
     
     legoData.getSetByNum('10072-1').then((value)=>{
         res.send(value)
@@ -28,7 +28,7 @@ app.get('/lego/sets/num-demp', (req, res)=>{
     })
 })
 
-app.get('/lego/sets/theme-demp', (req, res) => {
+app.get('/lego/sets/theme-demo', (req, res) => {
     legoData.getSetsByTheme('tech').then((value)=>{
         res.send(value)
     })
