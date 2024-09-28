@@ -2,8 +2,6 @@ const express = require('express')
 const app = express();
 const legoData = require("./modules/legoSets");
 legoData.initialize();
-// console.log(legoData.getAllSets())
-// console.log(typeof(legoData.getAllSets()))
 app.get('/', (req, res)=>{
     res.send('Assignment 2: Vanshaj Gugnani - 155445224')
 })
