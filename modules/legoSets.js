@@ -24,21 +24,24 @@ function getAllSets(){
 
 function getSetByNum(setNum){
     return new Promise((resolve, reject)=>{
-    if(sets.find((obj1)=>obj1['set_num'] === setNum) !== undefined){
-        resolve(sets.find((obj1)=>obj1['set_num'] === setNum))    
-    }
-    else{
-        reject(': unable to find requested set');
-    }
-    })  
+
+        let temp = sets.find((obj1)=>obj1['set_num'] === setNum)
+        if(temp !== undefined){
+            resolve(temp)    
+        }
+        else{
+            reject(': unable to find requested set');
+        }
+        })  
 }
 
 function getSetsByTheme(theme){
-    let temp =  sets.filter((obj1)=>{
-        return obj1['theme'].toLowerCase().includes(theme.toLowerCase())
-    })
     return new Promise((resolve, reject)=>{
         
+        let temp =  sets.filter((obj1)=>{
+            return obj1['theme'].toLowerCase().includes(theme.toLowerCase())
+        })
+
         if(temp !== undefined){
             resolve(temp)
         }
