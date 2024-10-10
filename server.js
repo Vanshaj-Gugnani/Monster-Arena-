@@ -20,8 +20,10 @@ const legoData = require("./modules/legoSets");
 const path = require('path')
 legoData.initialize();
 
-app.use(express.static('public'));
-
+app.use(express.static(__dirname + '/public'));
+app.set('views', __dirname + '/views');
+require('pg'); // explicitly require the "pg" module
+const Sequelize = require('sequelize');
 app.get('/', (req, res)=>{
     res.sendFile(path.join(__dirname,'./views/home.html'))
 })
