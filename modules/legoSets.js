@@ -42,7 +42,7 @@ function getSetsByTheme(theme){
             return obj1['theme'].toLowerCase().includes(theme.toLowerCase())
         })
 
-        if(temp !== undefined){
+        if(temp.length !== 0){
             resolve(temp)
         }
         else{
