@@ -1713,6 +1713,14 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.relative {
+  position: relative;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
 .m-10 {
   margin: 2.5rem;
 }
@@ -1810,6 +1818,14 @@ html {
   padding: 0.5rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-\[10vw\] {
+  padding: 10vw;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1893,10 +1909,5 @@ html {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .lg\:px-7 {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
   }
 }

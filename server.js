@@ -6,9 +6,9 @@
 *
 * https://www.senecacollege.ca/about/policies/academic-integrity-policy.html
 *
-* Name: Vanshaj Gugnani Student ID: vgugnani@myseneca.ca Date: 10-oct-2024
+* Name: Vanshaj Gugnani Student ID: vgugnani@myseneca.ca Date: 14-oct-2024
 *
-* Published URL: 
+* Published URL: https://web-03-three.vercel.app/
 *
 ********************************************************************************/
 
