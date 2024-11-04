@@ -8,7 +8,7 @@
 *
 * Name: Vanshaj Gugnani Student ID: vgugnani@myseneca.ca Date: 4-Nov-2024
 *
-* Published URL: 
+* Published URL: https://web-04-flax.vercel.app/
 *
 ********************************************************************************/
 

@@ -23,42 +23,41 @@
 
 
 
-      <div class="container mx-auto">
-        <div class="hero bg-base-200 min-h-20">
-            <div class="hero-content text-center">
-              <div class="max-w-md">
-                <h1 class="text-5xl font-bold"> <%= set.name%>  </h1>
-                <p class="py-6">
-                    Below, you will find detailed information about the set:<%=set.name%>
-                </p>
+        <div class="container mx-auto px-4 max-w-3xl">
+          <div class="hero bg-base-300 py-4 rounded-lg">
+              <div class="hero-content text-center">
+                  <div class="max-w-md mx-auto">
+                      <h1 class="text-3xl font-bold mb-2 text-gray-100"> <%= set.name %> </h1>
+                      <p class="text-sm mb-4 text-gray-300">
+                          Below, you will find detailed information about the set: <%= set.name %>
+                      </p>
+                  </div>
               </div>
-            </div>
           </div>
-          <div class="flex justify-center my-5">
-            <img class="w-[100%]" src="<%=set.img_url%>" alt="developer">
-
+          
+          <div class="flex justify-center my-4">
+              <img class="w-[75%] max-w-xs rounded-md shadow-md" src="<%= set.img_url %>" alt="set image">
           </div>
-
-          <div>
-            <p><strong>Set Name:</strong> <%=set.name%></p>
-            <p><strong>Year Released:</strong> <%=set.year%></p>
-            <p><strong>Theme:</strong> <%=set.theme%></p>
-            <p><strong>Number of Parts:</strong> <%=set.num_parts%></p>
+      
+          <div class="p-4 rounded-lg text-gray-300">
+              <p><strong>Set Name:</strong> <%= set.name %></p>
+              <p><strong>Year Released:</strong> <%= set.year %></p>
+              <p><strong>Theme:</strong> <%= set.theme %></p>
+              <p><strong>Number of Parts:</strong> <%= set.num_parts %></p>
           </div>
-
-          <div class="my-5">
+      
+          <div class="my-4 p-4 rounded-lg text-gray-300">
               <strong>Quote:</strong> 
-              <blockquote id="qte" class="underline italic">
-            </blockquote>
-            <p id="auth" class="text-right"></p>
+              <blockquote id="qte" class="underline italic text-sm mt-1"></blockquote>
+              <p id="auth" class="text-right text-xs"></p>
           </div>
-
-          <div class="my-5">
-            <a href="#" onclick="history.back();return false();" class="btn btn-sm btn-error">Return</a>
+      
+          <div class="my-4 flex justify-center">
+              <a href="#" onclick="history.back(); return false;" class="btn btn-sm btn-error">Return</a>
           </div>
       </div>
-
-
+      
+      
 
 </body>
 </html>
