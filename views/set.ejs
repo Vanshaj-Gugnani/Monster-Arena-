@@ -10,7 +10,7 @@
 <body>
     <script>
         document.addEventListener("DOMContentLoaded", ()=>{
-            fetch('https://quotable.io/random')
+            fetch('http://quotable.io/random')
             .then((value)=>value.json()) 
             .then((data)=>{
                 document.getElementById('qte').textContent = data.content
