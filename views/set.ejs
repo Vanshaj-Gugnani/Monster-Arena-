@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+    <link rel="stylesheet" href="/css/main.css" />
+
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=>{
+            fetch('https://quotable.io/random')
+            .then((value)=>value.json()) 
+            .then((data)=>{
+                document.getElementById('qte').textContent = data.content
+                document.getElementById('auth').textContent = data.author
+            })
+        })
+        </script>
+    
+        <%- include('partials/navbar', {page: ''}) %>
+
+
+
+      <div class="container mx-auto">
+        <div class="hero bg-base-200 min-h-20">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold"> <%= set.name%>  </h1>
+                <p class="py-6">
+                    Below, you will find detailed information about the set:<%=set.name%>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center my-5">
+            <img class="w-[100%]" src="<%=set.img_url%>" alt="developer">
+
+          </div>
+
+          <div>
+            <p><strong>Set Name:</strong> <%=set.name%></p>
+            <p><strong>Year Released:</strong> <%=set.year%></p>
+            <p><strong>Theme:</strong> <%=set.theme%></p>
+            <p><strong>Number of Parts:</strong> <%=set.num_parts%></p>
+          </div>
+
+          <div class="my-5">
+              <strong>Quote:</strong> 
+              <blockquote id="qte" class="underline italic">
+            </blockquote>
+            <p id="auth" class="text-right"></p>
+          </div>
+
+          <div class="my-5">
+            <a href="#" onclick="history.back();return false();" class="btn btn-sm btn-error">Return</a>
+          </div>
+      </div>
+
+
+
+</body>
+</html>
