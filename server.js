@@ -57,7 +57,8 @@ app.get('/lego/sets/:num', (req, res)=>{
 
 
 app.use((req, res, next) => {
-    res.status(404).render('404',  {message: "No view matched for a specific route "});
+    res.status(404).render('404',  {message: "No view matched for a specific route "}); 
+    // for the assignment
   });
 
 app.listen(3000)
