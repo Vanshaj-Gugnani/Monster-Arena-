@@ -12,12 +12,14 @@
       </label>
       <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52" style="z-index: 50;">
         <li><a class="<%= (page == '/about') ? 'active' : '' %>" href="/about">About</a></li>
+        <li><a class="<%= (page == '/lego/addSet') ? 'active' : '' %>" href="/lego/addSet">Add to Collection</a></li>
         <li><a class="<%= (page == '/lego/sets') ? 'active' : '' %>" href="/lego/sets">View Collection</a></li>
       </ul>
     </div>
     <!-- Normal navbar menu -->
     <ul class="menu menu-horizontal px-1 hidden lg:flex">
       <li><a class="<%= (page == '/about') ? 'active' : '' %>" href="/about">About</a></li>
+      <li><a class="<%= (page == '/lego/addSet') ? 'active' : '' %>" href="/lego/addSet">Add to Collection</a></li>
       <li><a class="<%= (page == '/lego/sets') ? 'active' : '' %>" href="/lego/sets">View Collection</a></li>
     </ul>
   </div>

@@ -32,7 +32,7 @@
           <div class="p-4 rounded-lg text-gray-300">
               <p><strong>Set Name:</strong> <%= set.name %></p>
               <p><strong>Year Released:</strong> <%= set.year %></p>
-              <p><strong>Theme:</strong> <%= set.theme %></p>
+              <p><strong>Theme:</strong> <%= set.Theme.name %></p>
               <p><strong>Number of Parts:</strong> <%= set.num_parts %></p>
           </div>
       
@@ -44,8 +44,10 @@
       
           <div class="my-4 flex justify-center">
               <a href="#" onclick="history.back(); return false;" class="btn btn-sm btn-error">Return</a>
+              <a href="/lego/editSet/<%=set.set_num%>" class=" btn mx-5 btn-sm btn-info">Edit</a>
           </div>
       </div>
+
       
     <script>
         document.addEventListener("DOMContentLoaded", ()=>{
