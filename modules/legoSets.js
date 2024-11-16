@@ -12,19 +12,19 @@ const themeData = require("../data/themeData");
 
 // set up sequelize to point to our postgres database
 let sequelize = new Sequelize(
-    process.env.DB_DATABASE,
-    process.env.DB_USER,
-    process.env.DB_PASSWORD,
-    {
-    host: process.env.DB_HOST,
-    dialect: "postgres",
-    port: 5432,
-    dialectModule: require("pg"),
-    dialectOptions: {
-    ssl: { rejectUnauthorized: false },
-    },
-    }
-    );
+  'SenecaDB',
+  'SenecaDB_owner',
+  'lLm8ohWAnT9Q',
+  {
+  host: "ep-shiny-scene-a55mj5lk-pooler.us-east-2.aws.neon.tech",
+  dialect: "postgres",
+  port: 5432,
+  dialectModule: require("pg"),
+  dialectOptions: {
+  ssl: { rejectUnauthorized: false },
+  },
+  }
+  );
 
 
 // creating theme table 
