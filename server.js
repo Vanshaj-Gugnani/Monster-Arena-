@@ -61,7 +61,7 @@ app.get('/lego/sets/:num', (req, res)=>{
 app.get('/lego/addSet',(req,res)=>{
     legoData.getAllThemes()
     .then((themeData) => {
-      res.render('addSet', { themes: themeData });  // Render the view with the themes
+      res.render('addSet', { themes: themeData });  
     })
     .catch((error) => {
         res.status(404).render('404',  {message: "error "});     });
@@ -69,15 +69,15 @@ app.get('/lego/addSet',(req,res)=>{
 
 app.post('/lego/addSet',(req, res)=>{
 
-    const setData = req.body;  // Get the data from the request body
+    const setData = req.body;  
   
-    legoData.addSet(setData)  // Call the addSet function which returns a promise
+    legoData.addSet(setData)  
       .then(() => {
-        // If successful, redirect to /lego/sets
+       
         res.redirect('/lego/sets');
       })
       .catch((err) => {
-        // If there's an error, render the 500 view with an error message
+        
         res.render("500", { message: `I'm sorry, but we have encountered the following error: ${err}` });
     });
     
@@ -88,15 +88,12 @@ app.get('/lego/editSet/:num',  (req, res)=>{
     Promise.all([legoData.getSetByNum(setNum), legoData.getAllThemes()])
     .then(([setData, themeData]) => {
       if (!setData) {
-        // If no set is found, render 404 with a message
         res.status(404).render('404', { message: `Set with number ${setNum} not found` });
       } else {
-        // Render the edit view with themes and set data
         res.render('editSet', { themes: themeData, set: setData });
       }
     })
     .catch((err) => {
-      // Handle any errors by rendering the 404 view
       res.status(404).render('404', { message: err.message});
     });
 })

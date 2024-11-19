@@ -72,7 +72,7 @@ const Set = sequelize.define(
 
 
 
-let sets = [];
+
 
 function initialize(){
     
@@ -93,11 +93,11 @@ function initialize(){
 function getAllSets(){
     return new Promise((resolve, reject) => {
         Set.findAll({
-            include: [Theme] // Include associated Theme data
+            include: [Theme] 
         })
         .then((allSets) => {
-            sets = allSets;
-            resolve(allSets); // Resolve with all sets, including their themes
+            
+            resolve(allSets); 
         })
         .catch((error) => {
             console.error("Error fetching sets:", error);
@@ -110,16 +110,16 @@ function getSetByNum(setNum){
     return new Promise((resolve, reject)=>{
 
         Set.findAll({
-            include: [Theme], // Include associated Theme data
+            include: [Theme], 
             where: {
                 set_num: setNum,
             }
         })
         .then((sets) => {
             if (sets.length > 0) {
-                resolve(sets[0]);        // Resolve with the first matched set
+                resolve(sets[0]);       
             } else {
-                reject(new Error("Unable to find requested set"));  // Reject if no set found
+                reject(new Error("Unable to find requested set")); 
             }        
         })
         .catch((error) => {
@@ -139,9 +139,9 @@ function getSetsByTheme(theme){
         }})
         .then((sets) => {
             if (sets.length > 0) {
-                resolve(sets);        // Resolve with the first matched set
+                resolve(sets);        
             } else {
-                reject(new Error("Unable to find requested set"));  // Reject if no set found
+                reject(new Error("Unable to find requested set"));  
             }        
         })
         .catch((error) => {
@@ -155,22 +155,22 @@ function addSet(setData){
     return new Promise((resolve, reject)=>{
         Set.create(setData)
         .then(() => {
-          resolve(); // Resolve the promise once the set is created successfully
+          resolve(); 
         })
         .catch((err) => {
-          reject(err.errors[0].message); // Reject the promise with the first error message
+          reject(err.errors[0].message); 
         });
     })
 }
 
 function getAllThemes() {
     return new Promise((resolve, reject) => {
-      Theme.findAll()  // This fetches all records from the Theme table
+      Theme.findAll()  
         .then(themes => {
-          resolve(themes);  // Resolves with the list of all themes
+          resolve(themes);  
         })
         .catch(err => {
-          reject(err);  // Rejects with the error if there is a failure
+          reject(err);  
         });
     });
   }
@@ -180,7 +180,7 @@ function getAllThemes() {
       Set.update(
         setData,
         {
-          where: { set_num : set_num }, // only update user with id == 2
+          where: { set_num : set_num }, 
         }
       ).then(() => {
         resolve();
@@ -196,7 +196,7 @@ function getAllThemes() {
   function DeleteSet(set_num){
     return new Promise((resolve, reject)=>{
       Set.destroy({
-        where: { set_num: set_num }, // only remove user with id == 3
+        where: { set_num: set_num }, 
       }).then(() => {
         resolve();
       })
