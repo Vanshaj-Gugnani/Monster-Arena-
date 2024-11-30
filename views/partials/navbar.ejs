@@ -1,7 +1,9 @@
-<div class="navbar bg-base-100 px-4 md:px-4 lg:px-8">
+<div class="navbar bg-base-100 fixed top-0 left-0 w-full z-50 shadow-md px-4 md:px-6 lg:px-8">
+  <!-- Logo -->
   <div class="flex-1">
-    <a href="/" class="btn btn-ghost text-xl">Lego Collection</a>
+    <a href="/" class="btn btn-ghost text-xl font-bold">Lego Collection</a>
   </div>
+  <!-- Navbar content -->
   <div class="flex-none">
     <!-- Mobile dropdown toggle -->
     <div class="dropdown dropdown-end lg:hidden">
@@ -10,17 +12,61 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
       </label>
-      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52" style="z-index: 50;">
+      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 z-50">
         <li><a class="<%= (page == '/about') ? 'active' : '' %>" href="/about">About</a></li>
-        <li><a class="<%= (page == '/lego/addSet') ? 'active' : '' %>" href="/lego/addSet">Add to Collection</a></li>
         <li><a class="<%= (page == '/lego/sets') ? 'active' : '' %>" href="/lego/sets">View Collection</a></li>
+
+        <% if (session.user) { %>
+          <li>
+            <details>
+              <summary>Account: <%= session.user.userName %></summary>
+              <ul class="p-2">
+                <li><a class="<%= (page == '/lego/addSet') ? 'active' : '' %>" href="/lego/addSet">Add to Collection</a></li>
+                <li><a class="<%= (page == '/userHistory') ? 'active' : '' %>" href="/userHistory">User History</a></li>
+                <li><a href="/logout">Log Out</a></li>
+              </ul>
+            </details>
+          </li>
+        <% } else { %>
+          <li>
+            <details>
+              <summary>Account</summary>
+              <ul class="p-2">
+                <li><a class="<%= (page == '/login') ? 'active' : '' %>" href="/login">Login</a></li>
+                <li><a class="<%= (page == '/register') ? 'active' : '' %>" href="/register">Register</a></li>
+              </ul>
+            </details>
+          </li>
+        <% } %>
       </ul>
     </div>
-    <!-- Normal navbar menu -->
+    <!-- Normal navbar menu for larger screens -->
     <ul class="menu menu-horizontal px-1 hidden lg:flex">
       <li><a class="<%= (page == '/about') ? 'active' : '' %>" href="/about">About</a></li>
-      <li><a class="<%= (page == '/lego/addSet') ? 'active' : '' %>" href="/lego/addSet">Add to Collection</a></li>
       <li><a class="<%= (page == '/lego/sets') ? 'active' : '' %>" href="/lego/sets">View Collection</a></li>
+
+      <% if (session.user) { %>
+        <li>
+          <details>
+            <summary>Account: <%= session.user.userName %></summary>
+            <ul class="p-2">
+              <li><a class="<%= (page == '/lego/addSet') ? 'active' : '' %>" href="/lego/addSet">Add to Collection</a></li>
+              <li><a class="<%= (page == '/userHistory') ? 'active' : '' %>" href="/userHistory">User History</a></li>
+              <li><a href="/logout">Log Out</a></li>
+            </ul>
+          </details>
+        </li>
+      <% } else { %>
+        <li>
+          <details>
+            <summary>Account</summary>
+            <ul class="p-2">
+              <li><a class="<%= (page == '/login') ? 'active' : '' %>" href="/login">Login</a></li>
+              <li><a class="<%= (page == '/register') ? 'active' : '' %>" href="/register">Register</a></li>
+            </ul>
+          </details>
+        </li>
+      <% } %>
     </ul>
   </div>
 </div>
