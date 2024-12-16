@@ -13,7 +13,7 @@
       <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52" style="z-index: 50;">
         <li><a class="<%= (page == '/about') ? 'active' : '' %>" href="/about">About</a></li>
         <li><a class="<%= (page == '/battles') ? 'active' : '' %>" href="/battles">Battles</a></li>
-        <li><a class="<%= (page == '/lego/sets') ? 'active' : '' %>" href="/lego/sets">View Monsters</a></li>
+        <li><a class="<%= (page == '/monsters/collection') ? 'active' : '' %>" href="/monsters/collection">View Monsters</a></li>
 
 
         <% if (session.user) { %>
@@ -23,8 +23,8 @@
               <ul style="z-index: 90;" class="p-2 right-0">
                 <li>
                   <a 
-                    class="<%= (page == '/lego/addSet') ? 'active' : '' %>" 
-                    href="/lego/addSet">
+                    class="<%= (page == '/monsters/add') ? 'active' : '' %>" 
+                    href="/monsters/add">
                     Add a Monster
                   </a>
                 </li>
@@ -85,8 +85,8 @@
       <li><a class="<%= (page == '/about') ? 'active' : '' %>" href="/about">About</a></li>
       <li><a class="<%= (page == '/battles') ? 'active' : '' %>" href="/battles">Battles</a></li>
 
-      <!-- <li><a class="<%= (page == '/lego/addSet') ? 'active' : '' %>" href="/lego/addSet">Add to Collection</a></li> -->
-      <li><a class="<%= (page == '/lego/sets') ? 'active' : '' %>" href="/lego/sets">View monsters</a></li>
+      <!-- <li><a class="<%= (page == '/monsters/add') ? 'active' : '' %>" href="/monsters/add">Add to Collection</a></li> -->
+      <li><a class="<%= (page == '/monsters/collection') ? 'active' : '' %>" href="/monsters/collection">View monsters</a></li>
 
        
 
@@ -97,8 +97,8 @@
             <ul style="z-index: 90;" class="p-2 right-0">
               <li>
                 <a 
-                  class="<%= (page == '/lego/addSet') ? 'active' : '' %>" 
-                  href="/lego/addSet">
+                  class="<%= (page == '/monsters/add') ? 'active' : '' %>" 
+                  href="/monsters/add">
                   Add to Monster
                 </a>
               </li>

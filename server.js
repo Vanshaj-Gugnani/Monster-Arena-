@@ -60,7 +60,7 @@ app.get('/about', (req, res) => {
     res.render('about')
 })
 
-app.get('/lego/sets', (req, res) => {
+app.get('/monsters/collection', (req, res) => {
 
     legoData.getSetsByTheme(req.query.theme || "").then((value) => {
         console.log(value);
@@ -72,7 +72,7 @@ app.get('/lego/sets', (req, res) => {
         })
 })
 
-app.get('/lego/sets/:num', (req, res) => {
+app.get('/monsters/collection/:num', (req, res) => {
 
     legoData.getSetByNum(req.params.num).then((value) => {
         res.render("set", { set: value })
@@ -83,7 +83,7 @@ app.get('/lego/sets/:num', (req, res) => {
 })
 
 
-app.get('/lego/addSet', ensureLogin, (req, res) => { //route 1
+app.get('/monsters/add', ensureLogin, (req, res) => { //route 1
     legoData.getAllThemes()
         .then((themeData) => {
             res.render('addSet', { themes: themeData });
@@ -93,7 +93,7 @@ app.get('/lego/addSet', ensureLogin, (req, res) => { //route 1
         });
 })
 
-app.post('/lego/addSet', ensureLogin, (req, res) => { // route 2
+app.post('/monsters/add', ensureLogin, (req, res) => { // route 2
 
     const setData = req.body;
     setData.userName = req.session.user.userName;
@@ -101,7 +101,7 @@ app.post('/lego/addSet', ensureLogin, (req, res) => { // route 2
     .then(() => {
         
         console.log(setData);
-            res.redirect('/lego/sets');
+            res.redirect('/monsters/collection');
         })
         .catch((err) => {
 
@@ -110,7 +110,7 @@ app.post('/lego/addSet', ensureLogin, (req, res) => { // route 2
 
 })
 
-app.get('/lego/editSet/:num', ensureLogin, (req, res) => { //route 3
+app.get('/monsters/edit/:num', ensureLogin, (req, res) => { //route 3
     setNum = req.params.num;
     Promise.all([legoData.getSetByNum(setNum), legoData.getAllThemes()])
         .then(([setData, themeData]) => {
@@ -125,24 +125,24 @@ app.get('/lego/editSet/:num', ensureLogin, (req, res) => { //route 3
         });
 })
 
-app.post('/lego/editSet',ensureLogin, (req, res) => { //route 4
+app.post('/monsters/edit',ensureLogin, (req, res) => { //route 4
     let monster_id = req.body.monster_id;
     let setData = req.body;
 
     legoData.editSet(monster_id, setData)
         .then((value) => {
-            res.redirect('/lego/sets')
+            res.redirect('/monsters/collection')
         })
         .catch((err) => {
             res.render("500", { message: `I'm sorry, but we have encountered the following error: ${err}` });
         })
 })
 
-app.get('/lego/deleteSet/:num',ensureLogin, (req, res) => { //route 5
+app.get('/monsters/delete/:num',ensureLogin, (req, res) => { //route 5
     let monster_id = req.params.num;
     legoData.DeleteSet(monster_id)
         .then(() => {
-            res.redirect('/lego/sets')
+            res.redirect('/monsters/collection')
         })
         .catch(() => {
             res.render("500", { message: `I'm sorry, but we have encountered the following error: ${err}` });
@@ -181,7 +181,7 @@ app.post('/login', (req,res) => {
         email: user.email, // authenticated user's email
         loginHistory: user.loginHistory, // authenticated user's loginHistory
         }
-        res.redirect('/lego/sets');
+        res.redirect('/monsters/collection');
         })
     .catch((err)=>{
         res.render("login", {errorMessage: err, userName: req.body.userName});
