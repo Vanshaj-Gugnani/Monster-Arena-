@@ -15,17 +15,13 @@
         <div class="hero-content flex-col lg:flex-row text-center">
 
           <div>
-            <h1 class=" text-5xl font-bold">Collection</h1>
+            <h1 class=" text-5xl font-bold">Monsters</h1>
            
             <p class="py-6">
-                Browse the entire collection of lego sets. 
+                Browse the deadly collection of Monsters👾. 
             </p>     
             <div class="divider"> Browse </div>     
-            <div>
-                <a href="?theme=technic" class="btn btn-outline btn-info">Technic</a>
-                <a href="?theme=christmas" class="btn btn-outline btn-success">Christmas</a>
-                <a href="?theme=clikits" class="btn btn-outline btn-warning">Clikits</a>
-            </div>
+            
 
 
           </div>
@@ -58,12 +54,12 @@
                   <td>
                       year: <%=data.year%>
                       <br>
-                      parts: <%=data.num_parts%>
+                      parts: <%=data.power_level%>
                   </td>
 
 
                   <td>
-                      <a href="/lego/sets/<%=data.set_num%>" class="btn btn-s btn-neutral">Details</a> 
+                      <a href="/lego/sets/<%=data.monster_id%>" class="btn btn-s btn-neutral">Details</a> 
 
                   </td>
               </tr>

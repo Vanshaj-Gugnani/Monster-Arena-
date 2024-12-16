@@ -1,314 +1,42 @@
 [
     {
-        "set_num": "10043-1",
-        "name": "2x2 Electrical Plate",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "1",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10043-1.jpg"
+        "monster_id": "M001",
+        "name": "Firefang",
+        "year": "2024",
+        "theme_id": "1",
+        "power_level": "85",
+        "img_url": "https://picsum.photos/seed/firefang/200/300"
     },
     {
-        "set_num": "10044-1",
-        "name": "Windows and Doors",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "44",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10044-1.jpg"
+        "monster_id": "M002",
+        "name": "Shadowclaw",
+        "year": "2024",
+        "theme_id": "4",
+        "power_level": "92",
+        "img_url": "https://picsum.photos/seed/shadowclaw/200/300"
     },
     {
-        "set_num": "10045-1",
-        "name": "Pillars and Beams",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "13",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10045-1.jpg"
+        "monster_id": "M003",
+        "name": "Aquabeast",
+        "year": "2024",
+        "theme_id": "2",
+        "power_level": "78",
+        "img_url": "https://picsum.photos/seed/aquabeast/200/300"
     },
     {
-        "set_num": "10046-1",
-        "name": "Brown Tiles",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "100",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10046-1.jpg"
+        "monster_id": "M004",
+        "name": "Stonecrusher",
+        "year": "2024",
+        "theme_id": "3",
+        "power_level": "88",
+        "img_url": "https://picsum.photos/seed/stonecrusher/200/300"
     },
     {
-        "set_num": "10047-1",
-        "name": "Light Gray Arches",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "36",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10047-1.jpg"
-    },
-    {
-        "set_num": "10048-1",
-        "name": "Small Wheels and Axles",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "61",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10048-1.jpg"
-    },
-    {
-        "set_num": "10049-1",
-        "name": "Large Wheels and Axles",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "31",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10049-1.jpg"
-    },
-    {
-        "set_num": "10050-1",
-        "name": "Gray Fences",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "34",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10050-1.jpg"
-    },
-    {
-        "set_num": "10051-1",
-        "name": "Transparent Bricks",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "50",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10051-1.jpg"
-    },
-    {
-        "set_num": "10052-1",
-        "name": "Intelligent Locomotive (Explore)",
-        "year": "2003",
-        "theme_id": "634",
-        "num_parts": "7",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10052-1.jpg"
-    },
-    {
-        "set_num": "10053-1",
-        "name": "Black Slopes 33",
-        "year": "2003",
-        "theme_id": "254",
-        "num_parts": "44",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10053-1.jpg"
-    },
-    {
-        "set_num": "10054-1",
-        "name": "Black Slopes 33 3 x 2 and 3 x 4",
-        "year": "2003",
-        "theme_id": "254",
-        "num_parts": "68",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10054-1.jpg"
-    },
-    {
-        "set_num": "10055-1",
-        "name": "Black Slopes 33 3 x 1 and 3 x 3",
-        "year": "2003",
-        "theme_id": "254",
-        "num_parts": "50",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10055-1.jpg"
-    },
-    {
-        "set_num": "10056-1",
-        "name": "White Plates 2 x n",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "56",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10056-1.jpg"
-    },
-    {
-        "set_num": "10057-1",
-        "name": "Black Plates 2 x n",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "56",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10057-1.jpg"
-    },
-    {
-        "set_num": "10058-1",
-        "name": "Red Plates 2 x n",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "56",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10058-1.jpg"
-    },
-    {
-        "set_num": "10059-1",
-        "name": "Dark Green Plates 2 x n",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "56",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10059-1.jpg"
-    },
-    {
-        "set_num": "10060-1",
-        "name": "Light Gray Plates 2 x n",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "56",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10060-1.jpg"
-    },
-    {
-        "set_num": "10061-1",
-        "name": "Black Plates 1 x n",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "84",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10061-1.jpg"
-    },
-    {
-        "set_num": "10062-1",
-        "name": "Red Plates 1 x n",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "84",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10062-1.jpg"
-    },
-    {
-        "set_num": "10063-1",
-        "name": "Green Plates 1 x n",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "84",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10063-1.jpg"
-    },
-    {
-        "set_num": "10064-1",
-        "name": "Light Gray Plates 1 x n",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "84",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10064-1.jpg"
-    },
-    {
-        "set_num": "10065-1",
-        "name": "White Plates 1 x n",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "84",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10065-1.jpg"
-    },
-    {
-        "set_num": "10066-1",
-        "name": "Castle Accessories",
-        "year": "2002",
-        "theme_id": "255",
-        "num_parts": "41",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10066-1.jpg"
-    },
-    {
-        "set_num": "10067-1",
-        "name": "Mini-Fig Headgear",
-        "year": "2002",
-        "theme_id": "254",
-        "num_parts": "53",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10067-1.jpg"
-    },
-    {
-        "set_num": "10068-1",
-        "name": "Santa Claus",
-        "year": "2002",
-        "theme_id": "227",
-        "num_parts": "39",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10068-1.jpg"
-    },
-    {
-        "set_num": "10069-1",
-        "name": "Christmas Tree",
-        "year": "2002",
-        "theme_id": "227",
-        "num_parts": "33",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10069-1.jpg"
-    },
-    {
-        "set_num": "10070-1",
-        "name": "Reindeer",
-        "year": "2002",
-        "theme_id": "227",
-        "num_parts": "26",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10070-1.jpg"
-    },
-    {
-        "set_num": "10071-1",
-        "name": "Mr. Bunny",
-        "year": "2003",
-        "theme_id": "229",
-        "num_parts": "25",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10071-1.jpg"
-    },
-    {
-        "set_num": "10072-1",
-        "name": "TECHNIC Beams",
-        "year": "2003",
-        "theme_id": "256",
-        "num_parts": "56",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10072-1.jpg"
-    },
-    {
-        "set_num": "10073-1",
-        "name": "Bushes",
-        "year": "2003",
-        "theme_id": "256",
-        "num_parts": "130",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10073-1.jpg"
-    },
-    {
-        "set_num": "10074-1",
-        "name": "Cross Axles",
-        "year": "2003",
-        "theme_id": "256",
-        "num_parts": "68",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10074-1.jpg"
-    },
-    {
-        "set_num": "10075-1",
-        "name": "Spider-Man Action Pack",
-        "year": "2002",
-        "theme_id": "706",
-        "num_parts": "25",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10075-1.jpg"
-    },
-    {
-        "set_num": "10076-1",
-        "name": "TECHNIC Gear Wheels",
-        "year": "2002",
-        "theme_id": "256",
-        "num_parts": "40",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10076-1.jpg"
-    },
-    {
-        "set_num": "10077-1",
-        "name": "TECHNIC Motor",
-        "year": "2003",
-        "theme_id": "256",
-        "num_parts": "55",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10077-1.jpg"
-    },
-    {
-        "set_num": "10078-1",
-        "name": "Train Connection Wire",
-        "year": "2003",
-        "theme_id": "257",
-        "num_parts": "1",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10078-1.jpg"
-    },
-    {
-        "set_num": "10079-1",
-        "name": "Snowman",
-        "year": "2003",
-        "theme_id": "227",
-        "num_parts": "42",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10079-1.jpg"
-    },
-    {
-        "set_num": "10080-1",
-        "name": "Angel",
-        "year": "2003",
-        "theme_id": "227",
-        "num_parts": "33",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10080-1.jpg"
-    },
-    {
-        "set_num": "10081-1",
-        "name": "Birthday Pack Heart",
-        "year": "2004",
-        "theme_id": "500",
-        "num_parts": "70",
-        "img_url": "https://cdn.rebrickable.com/media/sets/10081-1.jpg"
+        "monster_id": "M005",
+        "name": "Thunderwing",
+        "year": "2024",
+        "theme_id": "5",
+        "power_level": "95",
+        "img_url": "https://picsum.photos/seed/thunderwing/200/300"
     }
 ]

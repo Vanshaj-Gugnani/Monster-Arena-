@@ -1,6 +1,6 @@
 <div class="navbar bg-base-100 px-4 md:px-4 lg:px-8">
   <div class="flex-1">
-    <a href="/" class="btn btn-ghost text-xl">Lego Collection</a>
+    <a href="/" class="btn btn-ghost text-xl">Monster Arena 👾</a>
   </div>
   <div class="flex-none">
     <!-- Mobile dropdown toggle -->
@@ -12,20 +12,27 @@
       </label>
       <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52" style="z-index: 50;">
         <li><a class="<%= (page == '/about') ? 'active' : '' %>" href="/about">About</a></li>
-        <!-- <li><a class="<%= (page == '/lego/addSet') ? 'active' : '' %>" href="/lego/addSet">Add to Collection</a></li> -->
-        <li><a class="<%= (page == '/lego/sets') ? 'active' : '' %>" href="/lego/sets">View Collection</a></li>
+        <li><a class="<%= (page == '/battles') ? 'active' : '' %>" href="/battles">Battles</a></li>
+        <li><a class="<%= (page == '/lego/sets') ? 'active' : '' %>" href="/lego/sets">View Monsters</a></li>
 
 
         <% if (session.user) { %>
           <li>
             <details>
               <summary>Account: <%= session.user.userName %></summary>
-              <ul class="p-2 right-0">
+              <ul style="z-index: 90;" class="p-2 right-0">
                 <li>
                   <a 
                     class="<%= (page == '/lego/addSet') ? 'active' : '' %>" 
                     href="/lego/addSet">
-                    Add to Collection
+                    Add a Monster
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    class="<%= (page == '/profile') ? 'active' : '' %>" 
+                    href="/Profile">
+                    Profile
                   </a>
                 </li>
                 <li>
@@ -48,7 +55,7 @@
           <li>
             <details>
               <summary>Account</summary>
-              <ul class="p-2 right-0">
+              <ul  style="z-index: 90;"class="p-2 right-0">
                 <li>
                   <a 
                     class="<%= (page == '/login') ? 'active' : '' %>" 
@@ -76,8 +83,10 @@
     <!-- Normal navbar menu -->
     <ul class="menu menu-horizontal px-1 hidden lg:flex">
       <li><a class="<%= (page == '/about') ? 'active' : '' %>" href="/about">About</a></li>
+      <li><a class="<%= (page == '/battles') ? 'active' : '' %>" href="/battles">Battles</a></li>
+
       <!-- <li><a class="<%= (page == '/lego/addSet') ? 'active' : '' %>" href="/lego/addSet">Add to Collection</a></li> -->
-      <li><a class="<%= (page == '/lego/sets') ? 'active' : '' %>" href="/lego/sets">View Collection</a></li>
+      <li><a class="<%= (page == '/lego/sets') ? 'active' : '' %>" href="/lego/sets">View monsters</a></li>
 
        
 
@@ -85,12 +94,19 @@
         <li>
           <details>
             <summary>Account: <%= session.user.userName %></summary>
-            <ul class="p-2 right-0">
+            <ul style="z-index: 90;" class="p-2 right-0">
               <li>
                 <a 
                   class="<%= (page == '/lego/addSet') ? 'active' : '' %>" 
                   href="/lego/addSet">
-                  Add to Collection
+                  Add to Monster
+                </a>
+              </li>
+              <li>
+                <a 
+                  class="<%= (page == '/profile') ? 'active' : '' %>" 
+                  href="/Profile">
+                  Profile
                 </a>
               </li>
               <li>
@@ -112,7 +128,7 @@
         <li>
           <details>
             <summary>Account</summary>
-            <ul class="p-2 right-0">
+            <ul style="z-index: 90;" class="p-2 right-0">
               <li>
                 <a 
                   class="<%= (page == '/login') ? 'active' : '' %>" 

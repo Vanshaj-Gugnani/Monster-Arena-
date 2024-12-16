@@ -30,8 +30,8 @@
         
         <!-- Number of Parts Field -->
         <div class="mb-4">
-          <label for="num_parts" class="block text-lg font-medium text-gray-300">Number of Parts:</label>
-          <input type="number" id="num_parts" name="num_parts" class="input input-bordered w-full bg-gray-700 text-white" value="<%= set.num_parts %>" required />
+          <label for="power_level" class="block text-lg font-medium text-gray-300">Number of Parts:</label>
+          <input type="number" id="power_level" name="power_level" class="input input-bordered w-full bg-gray-700 text-white" value="<%= set.power_level %>" required />
         </div>
         
         <!-- Image URL Field -->
@@ -54,8 +54,8 @@
         
         <!-- Set Number Field (Read-only) -->
         <div class="mb-4">
-          <label for="set_num" class="block text-lg font-medium text-gray-300">Set Number:</label>
-          <input type="text" id="set_num" name="set_num" value="<%= set.set_num %>" readonly class="input input-bordered w-full bg-gray-600 text-gray-500 cursor-not-allowed" required />
+          <label for="monster_id" class="block text-lg font-medium text-gray-300">Set Number:</label>
+          <input type="text" id="monster_id" name="monster_id" value="<%= set.monster_id %>" readonly class="input input-bordered w-full bg-gray-600 text-gray-500 cursor-not-allowed" required />
         </div>
         
         <!-- Submit and Delete Buttons -->
@@ -63,7 +63,7 @@
           <!-- Update Button -->
           <button type="submit" class="btn btn-primary w-auto">Update Set</button>
           <!-- Delete Button -->
-          <a href="/lego/deleteSet/<%= set.set_num %>" class="btn  btn-error w-auto">Delete</a>
+          <a href="/lego/deleteSet/<%= set.monster_id %>" class="btn  btn-error w-auto">Delete</a>
         </div>
       </form>
     </div>

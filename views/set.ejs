@@ -33,39 +33,30 @@
               <p><strong>Set Name:</strong> <%= set.name %></p>
               <p><strong>Year Released:</strong> <%= set.year %></p>
               <p><strong>Theme:</strong> <%= set.Theme.name %></p>
-              <p><strong>Number of Parts:</strong> <%= set.num_parts %></p>
+              <p><strong>Power level:</strong> <%= set.power_level %></p>
           </div>
       
-          <div class="my-4 p-4 rounded-lg text-gray-300">
-              <strong>Quote:</strong> 
-              <blockquote id="qte" class="underline italic text-sm mt-1"></blockquote>
-              <p id="auth" class="text-right text-xs"></p>
-          </div>
+          
       
           <div class="my-4 flex justify-center">
               <a href="#" onclick="history.back(); return false;" class="btn btn-sm btn-error">Return</a>
 
-
+                
               <% if (session.user) { %>
-                <a href="/lego/editSet/<%=set.set_num%>" class=" btn mx-5 btn-sm btn-info">Edit</a>
-              <% } %>
+              <% if (session.user.userName === set.userName) { %>
+                <a href="/lego/editSet/<%=set.monster_id%>" class=" btn mx-5 btn-sm btn-info">Edit</a>
+              <% }} %>
               
+
+              <% if (session.user.userName !== set.userName) { %>
+                  <a href="/addChallenge/<%=set.monster_id%>" class=" btn mx-5 btn-sm btn-info">Challenge</a>
+                <% } %>
 
           </div>
       </div>
 
       
-    <script>
-        document.addEventListener("DOMContentLoaded", ()=>{
-            fetch('https://quotable.io/random')
-            .then((value)=>value.json()) 
-            .then((data)=>{
-                document.getElementById('qte').textContent = data.content
-                document.getElementById('auth').textContent = data.author
-            })
-            .catch(error => console.error("Error fetching quote:", error));
-        })
-        </script>
+
       
 
 </body>
