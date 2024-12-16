@@ -48,9 +48,10 @@
               <% }} %>
               
 
+              <% if (session.user) { %>
               <% if (session.user.userName !== set.userName) { %>
                   <a href="/addChallenge/<%=set.monster_id%>" class=" btn mx-5 btn-sm btn-info">Challenge</a>
-                <% } %>
+                <% }} %>
 
           </div>
       </div>
